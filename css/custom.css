@@ -1202,10 +1202,12 @@ p {
 }
 .team .card {
   float: left;
-  width: 100%;
+  width: auto;
   border: solid #ccc 1px;
   margin-bottom: 20px;
   padding-bottom: 15px;
+  margin: 10px;
+  height: auto;
 }
 section#contant h4 {
   float: left;
