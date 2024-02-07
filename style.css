@@ -2202,6 +2202,9 @@ section.team h4 {
 .p-0{
 padding: 0px;
 }
+.p--5{
+	padding: 5px;
+}
 .p-1{
 	padding: 10px;
 }
