@@ -2444,10 +2444,14 @@ padding: 0px;
   
   .gamesBackground{
 <<<<<<< HEAD
+<<<<<<< HEAD
 	background-color: transparent !important;;
 =======
 	background-color: #00000063;
 >>>>>>> - new repo
+=======
+	background-color: transparent !important;;
+>>>>>>> - api implemented.
   }
   .cardMain{
 	display: flex;
