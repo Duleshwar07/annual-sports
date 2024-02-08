@@ -2443,7 +2443,7 @@ padding: 0px;
   }
   
   .gamesBackground{
-	background-color: #00000063;
+	background-color: transparent !important;;
   }
   .cardMain{
 	display: flex;
