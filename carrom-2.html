@@ -35,7 +35,7 @@
    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
    <script src="js/3dslider.js"></script>
-   <script src="./js/table_tennis.js"></script>
+   <script src="./js/carrom.js"></script>
    </head>
    <body class="game_info" data-spy="scroll" data-target=".header">
       <!-- LOADER -->
@@ -233,173 +233,271 @@
                            <input type="radio" id="tab2" name="tab" />
                            <input type="radio" id="tab3" name="tab" />
                            <input type="radio" id="tab4" name="tab" />
-                           <div class="navbar_tab" id="tableTennisTabDiv">
+                           <div class="navbar_tab" id="carromTabDiv">
                            </div>
 
-                           <div class="container">
-                              <div class="row staticCardDummyFimalRounds">
-                                  <div class="col-md-12">
-                                      <div class="card data-table-card col-md-6" style="width: 100%;" >
-                                          <div class="card-body">
-                                          <table id="data-table-1" class="data-table" >
-                                              <h2>FINAL ( Gold & Silver Medal Match) </h2>
-                                              <thead>
-                                              <tr>
-                                                  <th></th>
-                                                  <th>Set 1</th>
-                                                  <th>Set 2</th>
-                                                  <th>Set 3</th>
-                                              </tr>
-                                              </thead>
-                                              <tbody>
-                                              <tr>
-                                                  <td>
-                                                  <h5>(Name | Team) <br/><span> (TBA)</span></h5>
-                                                  <br/>
-                                                  </td>
-                                                  <td>Point 1</td>
-                                                  <td>Point 2</td>
-                                                  <td>Point 3</td>
-                                              </tr>
-                                              <tr>
-                                                  <td>
-                                                  <h5>(Name | Team) <br/><span> (TBA)</span></h5>
-                                                  <br/>
-                                                  </td>
-                                                  <td>Point 1</td>
-                                                  <td>Point 2</td>
-                                                  <td>Point 3</td>
-                                              </tr>
-                                              </tbody>
-                                          </table>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-12">
-                                      <div class="card data-table-card col-md-6" style="width: 100%;" >
-                                          <div class="card-body">
-                                          <table id="data-table-1" class="data-table" >
-                                              <h2>Bronze Medal Match </h2>
-                                              <thead>
-                                              <tr>
-                                                  <th></th>
-                                                  <th>Set 1</th>
-                                                  <th>Set 2</th>
-                                                  <th>Set 3</th>
-                                              </tr>
-                                              </thead>
-                                              <tbody>
-                                              <tr>
-                                                  <td>
-                                                  <h5>(Name | Team) <br/><span> (TBA)</span></h5>
-                                                  <br/>
-                                                  </td>
-                                                  <td>Point 1</td>
-                                                  <td>Point 2</td>
-                                                  <td>Point 3</td>
-                                              </tr>
-                                              <tr>
-                                                  <td>
-                                                  <h5>(Name | Team) <br/><span> (TBA)</span></h5>
-                                                  <br/>
-                                                  </td>
-                                                  <td>Point 1</td>
-                                                  <td>Point 2</td>
-                                                  <td>Point 3</td>
-                                              </tr>
-                                              </tbody>
-                                          </table>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="col-md-12">
-                                      <div class="card data-table-card col-md-6" style="width: 100%;" >
-                                          <div class="card-body">
-                                          <table id="data-table-1" class="data-table" >
-                                              <h2>SEMI FINAL Matches </h2>
-                                              <thead>
-                                              <tr>
-                                                  <th></th>
-                                                  <th>Set 1</th>
-                                                  <th>Set 2</th>
-                                                  <th>Set 3</th>
-                                              </tr>
-                                              </thead>
-                                              <tbody>
-                                              <tr>
-                                                  <td>
-                                                  <h5>(Name | Team) <br/><span> (TBA)</span></h5>
-                                                  <br/>
-                                                  </td>
-                                                  <td>Point 1</td>
-                                                  <td>Point 2</td>
-                                                  <td>Point 3</td>
-                                              </tr>
-                                              <tr>
-                                                  <td>
-                                                  <h5>(Name | Team) <br/><span> (TBA)</span></h5>
-                                                  <br/>
-                                                  </td>
-                                                  <td>Point 1</td>
-                                                  <td>Point 2</td>
-                                                  <td>Point 3</td>
-                                              </tr>
-                                              </tbody>
-                                          </table>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
+                           <!-- <div class="navbar_tab" id="badmintonTabDiv">
+                           </div> -->
+                           <div class="row dummyStatic">
+                                 <div class="col static ">
+                                    <div id="table-row">
+                                       <div class="card data-table-card col-md-6" style="width: 100%;">
+                                         <div class="card-body">
+                                           <table id="data-table-1" class="data-table" >
+                                             <h2>FINAL </h2>
+                                             <thead>
+                                               <tr>
+                                                 <th></th>
+                                                 <th>Set 1</th>
+                                                 <th>Set 2</th>
+                                                 <th>Set 3</th>
+                                               </tr>
+                                             </thead>
+                                             <tbody>
+                                               <tr>
+                                                 <td>
+                                                   <h5>Team 1 <br/><span> (TBA, TBA)</span></h5>
+                                                   <br/>
+                                                 </td>
+                                                 <td>Point 1</td>
+                                                 <td>Point 2</td>
+                                                 <td>Point 3</td>
+                                               </tr>
+                                               <tr>
+                                                 <td>
+                                                   <h5>Team 2 <br/><span> (TBA, TBA)</span></h5>
+                                                   <br/>
+                                                 </td>
+                                                 <td>Point 1</td>
+                                                 <td>Point 2</td>
+                                                 <td>Point 3</td>
+                                               </tr>
+                                             </tbody>
+                                           </table>
+                                         </div>
+                                       </div>
+                                     </div>
+                                 </div>
+                                 <div class="roundHeadings">
+                                    <h3>
+                                       <span>
+                                          Round 1
+                                       </span>
+                                    </h3>
+                                    <h3>
+                                       <span>
+                                          Round 2
+                                       </span>
+                                    </h3>
+                                 </div>
+                                 <div class="col">
+                                    <div id="table-row">
+                                       <div class="card data-table-card col-md-6" style="width: 100%;" >
+                                         <div class="card-body">
+                                           <table id="data-table-1" class="data-table" >
+                                             <h2>SEMI FINAL Matches </h2>
+                                             <thead>
+                                               <tr>
+                                                 <th></th>
+                                                 <th>Set 1</th>
+                                                 <th>Set 2</th>
+                                                 <th>Set 3</th>
+                                               </tr>
+                                             </thead>
+                                             <tbody>
+                                               <tr>
+                                                 <td>
+                                                   <h5>(Name | Team) <br/><span> (TBA)</span></h5>
+                                                   <br/>
+                                                 </td>
+                                                 <td>Point 1</td>
+                                                 <td>Point 2</td>
+                                                 <td>Point 3</td>
+                                               </tr>
+                                               <tr>
+                                                 <td>
+                                                   <h5>(Name | Team) <br/><span> (TBA)</span></h5>
+                                                   <br/>
+                                                 </td>
+                                                 <td>Point 1</td>
+                                                 <td>Point 2</td>
+                                                 <td>Point 3</td>
+                                               </tr>
+                                             </tbody>
+                                           </table>
+                                         </div>
+                                       </div>
+                                     </div>
+                                 </div>
+                                 <div class="col">
+                                    <div id="table-row">
+                                       <div class="card data-table-card col-md-6" style="width: 100%;" >
+                                         <div class="card-body">
+                                           <table id="data-table-1" class="data-table" >
+                                             <h2>Bronze Medal Match </h2>
+                                             <thead>
+                                               <tr>
+                                                 <th></th>
+                                                 <th>Set 1</th>
+                                                 <th>Set 2</th>
+                                                 <th>Set 3</th>
+                                               </tr>
+                                             </thead>
+                                             <tbody>
+                                               <tr>
+                                                 <td>
+                                                   <h5>(Name | Team) <br/><span> (TBA)</span></h5>
+                                                   <br/>
+                                                 </td>
+                                                 <td>Point 1</td>
+                                                 <td>Point 2</td>
+                                                 <td>Point 3</td>
+                                               </tr>
+                                               <tr>
+                                                 <td>
+                                                   <h5>(Name | Team) <br/><span> (TBA)</span></h5>
+                                                   <br/>
+                                                 </td>
+                                                 <td>Point 1</td>
+                                                 <td>Point 2</td>
+                                                 <td>Point 3</td>
+                                               </tr>
+                                             </tbody>
+                                           </table>
+                                         </div>
+                                       </div>
+                                     </div>
+                                 </div>
+                                 <div class="col">
+                                    <div id="table-row">
+                                       <div class="card data-table-card col-md-6" style="width: 100%;" >
+                                         <div class="card-body">
+                                           <table id="data-table-1" class="data-table" >
+                                             <h2> FINAL ( Gold & Silver Medal Match)</h2>
+                                             <thead>
+                                               <tr>
+                                                 <th></th>
+                                                 <th>Set 1</th>
+                                                 <th>Set 2</th>
+                                                 <th>Set 3</th>
+                                               </tr>
+                                             </thead>
+                                             <tbody>
+                                               <tr>
+                                                 <td>
+                                                   <h5>(Name | Team) <br/><span> (TBA)</span></h5>
+                                                   <br/>
+                                                 </td>
+                                                 <td>Point 1</td>
+                                                 <td>Point 2</td>
+                                                 <td>Point 3</td>
+                                               </tr>
+                                               <tr>
+                                                 <td>
+                                                   <h5>(Name | Team) <br/><span> (TBA)</span></h5>
+                                                   <br/>
+                                                 </td>
+                                                 <td>Point 1</td>
+                                                 <td>Point 2</td>
+                                                 <td>Point 3</td>
+                                               </tr>
+                                             <!-- </tbody><br/><span> (TBA, TBA)</span> -->
+                                           </table>
+                                         </div>
+                                       </div>
+                                     </div>
+                                 </div>
                              </div>
+                              
+                           
                            <div id="tables-container" class="container">
                               <div class="row">
-                                 <div class="col-md-4">
-                                    <div class="text-left"><h4>Round 1</h4></div>
+                                 <div class="col-md-6">
                                     <div class="row dynamicRow" id="table-row">
                                 
                                     </div>
                                  </div>
-                                 <div class="col-md-4">
-                                    <div class="text-left"><h4>Round 2</h4></div>
-                                    <div class="card data-table-card "  >
-                                       <div class="card-body">
-                                       <table id="data-table-1" class="data-table" >
-                                       
-                                           <thead>
-                                           <tr>
-                                               <th></th>
-                                               <th>Set 1</th>
-                                               <th>Set 2</th>
-                                               <th>Set 3</th>
-                                           </tr>
-                                           </thead>
-                                           <tbody>
-                                           <tr>
-                                               <td>
-                                               <h5>(Name | Team) <br/><span> (TBA)</span></h5>
-                                               <br/>
-                                               </td>
-                                               <td>Point 1</td>
-                                               <td>Point 2</td>
-                                               <td>Point 3</td>
-                                           </tr>
-                                           <tr>
-                                               <td>
-                                               <h5>(Name | Team) <br/><span> (TBA)</span></h5>
-                                               <br/>
-                                               </td>
-                                               <td>Point 1</td>
-                                               <td>Point 2</td>
-                                               <td>Point 3</td>
-                                           </tr>
-                                           </tbody>
-                                       </table>
-                                       </div>
-                                   </div>
+                                 <div class="col-md-6 dummydataCard">
+                                    <div id="table-row">
+                                       <div class="card ">
+                                          <div class="card-body">
+                                             <table id="data-table-0" class="data-table">
+                                                <thead>
+                                                   <tr>
+                                                     <th></th>
+                                                     <th>Set 1</th>
+                                                     <th>Set 2</th>
+                                                     <th>Set 3</th>
+                                                   </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                   <tr>
+                                                     <td>
+                                                       <h5>(Name | Team) <br/><span> (TBA)</span></h5>
+                                                       <br/>
+                                                     </td>
+                                                     <td>Point 1</td>
+                                                     <td>Point 2</td>
+                                                     <td>Point 3</td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td>
+                                                       <h5>(Name | Team) <br/><span> (TBA)</span></h5>
+                                                       <br/>
+                                                     </td>
+                                                     <td>Point 1</td>
+                                                     <td>Point 2</td>
+                                                     <td>Point 3</td>
+                                                   </tr>
+                                                 </tbody>
+                                             </table>
+                                             </div></div>
+                                     </div>
+                                 </div>
+                                 <div class="col-md-6 dummydataCard2">
+                                    <div id="table-row">
+                                       <div class="card ">
+                                          <div class="card-body">
+                                             <table id="data-table-0" class="data-table">
+                                                <thead>
+                                                   <tr>
+                                                     <th></th>
+                                                     <th>Set 1</th>
+                                                     <th>Set 2</th>
+                                                     <th>Set 3</th>
+                                                   </tr>
+                                                 </thead>
+                                                 <tbody>
+                                                   <tr>
+                                                     <td>
+                                                       <h5>(Name | Team) <br/><span> (TBA)</span></h5>
+                                                       <br/>
+                                                     </td>
+                                                     <td>Point 1</td>
+                                                     <td>Point 2</td>
+                                                     <td>Point 3</td>
+                                                   </tr>
+                                                   <tr>
+                                                     <td>
+                                                       <h5>(Name | Team) <br/><span> (TBA)</span></h5>
+                                                       <br/>
+                                                     </td>
+                                                     <td>Point 1</td>
+                                                     <td>Point 2</td>
+                                                     <td>Point 3</td>
+                                                   </tr>
+                                                 </tbody>
+                                             </table>
+                                             </div></div>
+                                     </div>
                                  </div>
                               </div>
+                              
+                              
+                              
                               </div>
                         </div>
+                 
                 </div>
              </div>
          </div>

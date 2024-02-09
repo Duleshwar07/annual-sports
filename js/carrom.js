@@ -14,11 +14,11 @@ $(document).ready(function () {
   // sportCategories.forEach(function (category) {
   //   fetchDataAndDisplay(category.id, category.tabDiv);
   // });
-  fetchDataAndDisplay("#badmintonTabDiv");
+  fetchDataAndDisplay("#carromTabDiv");
 
   function fetchDataAndDisplay(tabDiv) {
     $.ajax({
-      url: "http://10.244.1.180:8080/sportCategory/1",
+      url: "http://10.244.1.180:8080/sportCategory/2",
       method: "GET",
       dataType: "json",
       success: function (data) {

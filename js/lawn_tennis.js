@@ -14,11 +14,11 @@ $(document).ready(function () {
   // sportCategories.forEach(function (category) {
   //   fetchDataAndDisplay(category.id, category.tabDiv);
   // });
-  fetchDataAndDisplay("#badmintonTabDiv");
+  fetchDataAndDisplay("#lawnTennisTabDiv");
 
   function fetchDataAndDisplay(tabDiv) {
     $.ajax({
-      url: "http://10.244.1.180:8080/sportCategory/1",
+      url: "http://10.244.1.180:8080/sportCategory/5",
       method: "GET",
       dataType: "json",
       success: function (data) {
@@ -69,7 +69,7 @@ $(document).ready(function () {
           var tableId = "data-table-" + index;
 
           // Create a card for each table
-          var card = $("<div>").addClass("card data-table-card ");
+          var card = $("<div>").addClass("card data-table-card col-md-6");
           var cardBody = $("<div>").addClass("card-body").appendTo(card);
 
           // Create a table element for each event

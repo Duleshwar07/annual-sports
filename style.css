@@ -2202,9 +2202,6 @@ section.team h4 {
 .p-0{
 padding: 0px;
 }
-.p--5{
-	padding: 5px;
-}
 .p-1{
 	padding: 10px;
 }
@@ -2446,7 +2443,7 @@ padding: 0px;
   }
   
   .gamesBackground{
-	background-color: #00000063;
+	background-color: transparent !important;;
   }
   .cardMain{
 	display: flex;
@@ -3087,14 +3084,21 @@ padding: 0px;
 	#tab1:checked ~ .tab_content .tab1, 
 	#tab2:checked ~ .tab_content .tab2, 
 	#tab3:checked ~ .tab_content .tab3,
-	#tab4:checked ~ .tab_content .tab4
+	#tab4:checked ~ .tab_content .tab4,
+	#tab5:checked ~ .tab_content .tab5,
+	#tab6:checked ~ .tab_content .tab6,
+	#tab7:checked ~ .tab_content .tab7
 	{
 	  display: block;
 	}
 	#tab1:checked ~ .navbar_tab .lab1,
 	#tab2:checked ~ .navbar_tab .lab2,
 	#tab3:checked ~ .navbar_tab .lab3,
-	#tab4:checked ~ .navbar_tab .lab4{
+	#tab4:checked ~ .navbar_tab .lab4,
+	#tab5:checked ~ .navbar_tab .lab5,
+	#tab6:checked ~ .navbar_tab .lab6,
+	#tab7:checked ~ .navbar_tab .lab7
+	{
 	  background: #006442;
 	  color: #fff;
 	}
@@ -3106,14 +3110,21 @@ padding: 0px;
 	#tab1women:checked ~ .tab_content .tab1women, 
 	#tab2women:checked ~ .tab_content .tab2women, 
 	#tab3:checked ~ .tab_content .tab3,
-	#tab4:checked ~ .tab_content .tab4
+	#tab4:checked ~ .tab_content .tab4,
+	#tab5:checked ~ .tab_content .tab5,
+	#tab6:checked ~ .tab_content .tab6,
+	#tab7:checked ~ .tab_content .tab7
 	{
 	  display: block;
 	}
 	#tab1women:checked ~ .navbar_tab .lab1women,
 	#tab2women:checked ~ .navbar_tab .lab2women,
 	#tab3:checked ~ .navbar_tab .lab3,
-	#tab4:checked ~ .navbar_tab .lab4{
+	#tab4:checked ~ .navbar_tab .lab4,
+	#tab5:checked ~ .navbar_tab .lab5,
+	#tab6:checked ~ .navbar_tab .lab6,
+	#tab7:checked ~ .navbar_tab .lab7
+	{
 	  background: #006442;
 	  color: #fff;
 	}
@@ -3323,4 +3334,19 @@ background: linear-gradient(90deg, rgba(25,65,153,1) 0%, rgba(9,9,121,1) 35%, rg
 	  .timeCard{
 		margin-top: 60px;
 	  }
+  }
+  .hr-line{
+	border: 1px solid #ddd;
+	max-width: 100%;
+	width: 90%;
+	margin: auto;
+  }
+  .shotputCardTable{
+	width: 100% !important;
+  }
+  .text-left{
+	text-align: left;
+  }
+  .staticCardDummyFimalRounds{
+	flex-direction: column;
   }
